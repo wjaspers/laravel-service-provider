@@ -4,6 +4,11 @@
             "TestsAlwaysIncluded\\": "src/"
         }
     },
+    "autoload-dev": {
+        "psr-0": {
+            "TestsAlwaysIncluded\\": "tests/"
+        }
+    },
     "description": "A symfony like approach to Laravel's Service Providers.",
     "homepage": "https://github.com/wjaspers/laravel-service-provider",
     "license": "MIT",
