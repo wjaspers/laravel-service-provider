@@ -1,0 +1,23 @@
+{
+    "autoload": {
+        "psr-0": {
+            "TestsAlwaysIncluded\\": "src/"
+        }
+    },
+    "description": "A symfony like approach to Laravel's Service Providers.",
+    "homepage": "https://github.com/wjaspers/laravel-service-provider",
+    "license": "MIT",
+    "name": "wjaspers/laravel-service-provider",
+    "type": "library",
+    "require-dev": {
+        "phpunit/phpunit": "~3.7"
+    },
+    "require": {
+    },
+    "suggest": {
+    },
+    "support": {
+        "issues": "https://github.com/wjaspers/laravel-service-provider/issues",
+        "source": "https://github.com/wjaspers/laravel-service-provider"
+    }
+}
