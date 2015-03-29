@@ -12,7 +12,8 @@ class MyPackageServiceProvider extends ServiceProvider
 
 		$this->bindCommands('mypackage::commands');
 
-		include __DIR__.'/../Resources/routes.php';
+		// If your package includes routes, call them here.
+		include __DIR__.'/Resources/routes.php';
 	}
 
 	public function register()
