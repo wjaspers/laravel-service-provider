@@ -20,21 +20,18 @@ namespace MyPackage\Path;
 
 class MyPackageProvider extends \TestsAlwaysIncluded\Laravel\ServiceProvider
 {
-  /** @var string */
-  const PACKAGE_ALIAS = 'mypackage';
-  
   /** {@inheritdoc} */
   public function boot()
   {
-    $this->package('MyPackage\Path', static::PACKAGE_ALIAS, __DIR__.'/../Resources');
+    $this->package('MyPackage\Path', 'mypackage', __DIR__.'/../Resources');
     $this->bindCommands('mypackage::commands');
   }
   
   /** {@inheritdoc} */
   public function register()
   {
-    $this->package('MyPackage\Path', static::PACKAGE_ALIAS, __DIR__.'/../Resources');
-    $ths->bindServices('mypackage::services');
+    $this->package('MyPackage\Path', 'mypackage', __DIR__.'/../Resources');
+    $this->bindServices('mypackage::services');
   }
 }
 ```
