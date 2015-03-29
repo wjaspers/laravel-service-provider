@@ -45,5 +45,8 @@ class MyPackageProvider extends \TestsAlwaysIncluded\Laravel\ServiceProvider
 * How to handle global overrides are up to you
   * (i.e. `app/config/local/mypackage.php` wont automatically override `MyPackage\Path\Resources\config\mypackage.php`)
 
+## Compatibility
+* This is intended for Laravel 4.x projects.
+
 ## Needs work
 * Laravel 4's `provides()` doesn't discover the config correctly. For now, just manually list the ones you need.
