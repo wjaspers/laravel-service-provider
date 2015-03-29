@@ -8,16 +8,17 @@ class MyPackageServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{
-		$this->package('MyPackage', 'mypackage', __DIR__.'/../Resources');
+		$this->package('MyPackage', 'mypackage', __DIR__.'/Resources');
 
 		$this->bindCommands('mypackage::commands');
 
-		include __DIR__.'/../Resources/routes.php';
+		// If your package includes routes, call them here.
+		include __DIR__.'/Resources/routes.php';
 	}
 
 	public function register()
 	{
-		$this->package('MyPackage', 'mypackage', __DIR__.'/../Resources');
+		$this->package('MyPackage', 'mypackage', __DIR__.'/Resources');
 		// Bind services from configuration.
 		$this->bindServices('mypackage::services');
 	}
