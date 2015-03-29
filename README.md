@@ -45,7 +45,8 @@ class MyPackageProvider extends \TestsAlwaysIncluded\Laravel\ServiceProvider
 * Why are you calling `$this->package()` twice?
   * Laravel's `boot()` and `register()` functions seem to be exclusive of one another.
   * Package alias lookups will fail otherwise.
-    * (i.e. `mypackage::config.entry' might exist in `MyPackage\Resources\config\config.php` but Laravel wont know its there.)
+    * (i.e. `mypackage::config.entry` might exist in `MyPackage\Resources\config\config.php` but Laravel wont know its there.)
+* No concept of `tagging` services.
 
 ## Compatibility
 * This is intended for Laravel 4.x projects.
