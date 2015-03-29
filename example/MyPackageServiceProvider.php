@@ -8,7 +8,7 @@ class MyPackageServiceProvider extends ServiceProvider
 {
 	public function boot()
 	{
-		$this->package('MyPackage', 'mypackage', __DIR__.'/../Resources');
+		$this->package('MyPackage', 'mypackage', __DIR__.'/Resources');
 
 		$this->bindCommands('mypackage::commands');
 
@@ -17,7 +17,7 @@ class MyPackageServiceProvider extends ServiceProvider
 
 	public function register()
 	{
-		$this->package('MyPackage', 'mypackage', __DIR__.'/../Resources');
+		$this->package('MyPackage', 'mypackage', __DIR__.'/Resources');
 		// Bind services from configuration.
 		$this->bindServices('mypackage::services');
 	}
