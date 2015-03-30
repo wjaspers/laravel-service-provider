@@ -46,7 +46,7 @@ return array(
 		),
 		// Or in the argument lists for 'calls'.
 		'calls' => array(
-			array('put', array('five', '%mypackage.five')),
+			array('put', array('five', '%mypackage::five')),
 		),
 	),
 	// Create an instance of our DoSomethingCommand.
