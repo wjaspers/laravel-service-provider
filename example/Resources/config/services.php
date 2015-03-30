@@ -24,6 +24,9 @@ return array(
 	'mypackage.service.three' => array(
 		// Show me some voodoo!
 		'class' => 'Illuminate\Support\Collection',
+		// The 'shared' flag will override the 'prototype' flag.
+		'prototype' => true,
+		'shared' => true,
 		// We want to inject our services when this one is requested.
 		'calls' => array(
 			array('put', array('one', '@mypackage.service.name')),
