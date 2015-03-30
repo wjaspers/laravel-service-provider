@@ -12,6 +12,7 @@ return array(
 		'class' => 'MyPackage\Services\MyService',
 		// Symfony2 prototype option is supported.
 		// This means we want a new instance every time.
+		// If the option is not provided, it will default to 'true'.
 		'prototype' => true,
 	),
 	'mypackage.service.two' => array(
