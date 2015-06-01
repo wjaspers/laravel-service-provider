@@ -154,10 +154,8 @@ abstract class ServiceProvider extends BaseServiceProvider
 				// Look for container aliases.
 				if (strpos($value, '@') === 0) {
 					$value = substr($value, 1);
-					if ($app->bound($value) || $app->isAlias($value)) {
-						// Replace the argument.
-						$arguments[$index] = $app->make($value);
-					}
+					// Replace the argument.
+					$arguments[$index] = $app->make($value);
 				
 				// Look for configuration entries.
 				} elseif (strpos($value, '%') === 0) {
