@@ -8,7 +8,7 @@ namespace TestsAlwaysIncluded\Laravel\Support;
 class ServiceProviderTest extends \PHPUnit_Framework_TestCase
 {
 	/**
-	 * 
+	 * @covers ::bindServices
 	 */
 	public function testBindServices()
 	{
