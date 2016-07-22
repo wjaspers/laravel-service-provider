@@ -1,6 +1,10 @@
 # laravel-service-provider
 A symfony like approach to Laravel's service providers.
 
+## NOTICE
+Upon later review, it has been determined that loading services via config is painstakingly slow.
+Unless you've made changes to the bootstrapping process and cached the totality of your configurations in a single source, the added hits to disk can become detrimental to performance.
+
 ## Why oh why?
 * I got fed up with creating the same service provider logic over...and over...and over again.
 * Laravel's approach to dependency injection is unit testable, which makes me happy. 
